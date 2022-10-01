@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Best Anime Character Survey Form</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div id="heading-para">
+            <h1 id="title">Best Anime Character Survey Form</h1>
+            <p id="description">Thank you for sharing about your favorite anime Character</p>
+        </div>
+        <div id="form-styling">
+            <form id="survey-form">
+                <div class="input-info">
+                    <label id="name-label">
+                        Name
+                        <input id="name" type="text" placeholder="Enter your name" required>
+                    </label>
+                    <label id="email-label">
+                        Email
+                        <input id="email" type="email" placeholder="Your email" required>
+                    </label>
+                    <label id="number-label"> 
+                        Age
+                        <input id="number" type="number" placeholder="Age" min="8" max="45" required>
+                    </label>
+                </div>
+                <div class="select-input">
+                    <label>
+                        Which is your favorite anime?
+                        <select id="dropdown">
+                            <option>select</option>
+                            <option>DBZ</option>
+                            <option>Naruto</option>
+                            <option>One piece</option>
+                        </select>
+                    </label>
+                </div>
+                <div class="radio-input">
+                    <label for="villian">
+                        How is your favorite villian?
+                    </label>
+                    <label for="frieza">
+                        <input class="inline" id="frieza" value="frieza" name="Character" type="radio">
+                        Frieza
+                    </label>
+                    <label for="madara">
+                        <input class="inline" id="madara" value="madara" name="Character" type="radio">
+                        Madara
+                    </label>
+                    <label for="blackbeard">
+                        <input class="inline" id="blackbeard" value="blackbeard" name="Character" type="radio">
+                        Blackbeard
+                    </label>   
+                </div>
+                <div class="checkbox-input">
+                    <label for="hero">
+                        How is your favorite hero?
+                    </label>
+                    <label for="goku">
+                        <input class="inline" type="checkbox" id="goku" value="goku" name="character">
+                        Goku
+                    </label>
+                    <label for="naruto">
+                        <input class="inline" type="checkbox" id="naruto" value="naruto" name="character">
+                        Naruto
+                    </label>
+                    <label for="luffy">
+                        <input class="inline" type="checkbox" id="luffy" value="luffy" name="character">
+                        Luffy
+                    </label>
+                </div>
+                <div class="textarea-input">
+                    <label for="more-info">
+                        "Tell us about what is the most favorite thing about the characters you selected above."
+                        <textarea name="more-info" rows="5" placeholder="Enter your comment here..."></textarea>
+                        <button id="submit">Submit</button>
+                    </label>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
