@@ -4,7 +4,7 @@ const city = inputVal.value
 
 async function getWeatherDetails() {
     const city = inputVal.value
-    const API_ID = "e2412df07feab8c70ad100da074f5344"
+    const API_ID = config.API_ID
     url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_ID}&units=metric`
     
     let jqXhr = jQuery.get(url)
@@ -25,7 +25,7 @@ async function getWeatherDetails() {
 }
 
 // async function getWeatherData(city) {
-//     const API_ID = "e2412df07feab8c70ad100da074f5344"
+//     const API_ID = config.API_ID
 //     url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_ID}&units=metric`
 //     let response = await fetch(url)
 //     let data = await response.json()
